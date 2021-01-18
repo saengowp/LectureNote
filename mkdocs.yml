@@ -1,0 +1,6 @@
+site_name: Lecture Note
+theme: readthedocs
+
+markdown_extensions:
+        - toc:
+                permalink: True
