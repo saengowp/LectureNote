@@ -1,6 +1,9 @@
 site_name: Lecture Note
-theme: readthedocs
+theme:
+        name: material
+        features:
+                - navigation.tabs
 
-markdown_extensions:
-        - toc:
-                permalink: True
+site_url: https://lecturenote.pipats.xyz/
+repo_url: https://github.com/saengowp/LectureNote
+# markdown_extensions:

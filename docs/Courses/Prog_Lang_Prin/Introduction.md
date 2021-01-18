@@ -1,28 +1,26 @@
-# Programming Languages Principles
+# Introduction
 
-## Introduction
-
-###Objective
+##Objective
 
 - Structure of programming language
 - Declarative programming language
 - Building complier
 
-### Material
+## Material
 
 - In-class exercise every two weeks (scored)
 - Zoom for class
 - Discord for discussion
 
 
-### Evolution of Programming Language
+## Evolution of Programming Language
 
 1. Machine Language: Sequence of raw instructions
 2. Assembly language: 1-1 correspondant to (1) but with mnemonic
 3. Machine independent language:
 	- Natural language and mathematical formula
 
-### Many choices of language
+## Many choices of language
 
 Each language contains different features such as
 
@@ -31,7 +29,7 @@ Each language contains different features such as
 
 Some are design for special purpose eg. Lisp, C, Prolog
 
-#### Factor affecting popularity
+### Factor affecting popularity
 
 Popularity depends on
 
@@ -43,7 +41,7 @@ Popularity depends on
 - Complier and tools
 - Economic, Patronage, Inertia
 
-### Classification of Programming Language
+## Classification of Programming Language
 
 - Imperative
 	- Von Neumann: Variable assignment
@@ -52,7 +50,7 @@ Popularity depends on
 - Declarative
 	- Rather than defining step-by-step instructions. The rules are defined and the runtime resolve the rules
 
-### Program Translation
+## Program Translation
 
 - Compiler
 	- generate machine code once which can then be run
@@ -71,7 +69,7 @@ Popularity depends on
 	- Why not pre-compile it? because that would defeat portability.
 	- How about precompile it on user's machine? they would be upset at startup time
 
-### Extra
+## Extra
 
 How does single-stepping work in compiled language (eg. GDB)? 
 The debugger insert an invalid instruction at the target breakpoint.
