@@ -1,13 +1,11 @@
-# Algorithm Design
+# Introduction
 
-## Introduction
-
-### Goal
+## Goal
 
 - Formulate computational problem into a clear requirement
 - Design algorithm to solve the problem correctly and efficiently
 
-### Topics
+## Topics
 
 - Complexity Analysis
 - NP-Completeness (Can the problem be solved in reasonable time)
@@ -18,18 +16,18 @@
 	- Graph Algorithm
 	- State Space Search
 
-### Example Problems
+## Example Problems
 
 Problem Statement in this course contains
 
 - Precise constraint of the input
 - Required properties of the output
 
-#### GCD
+### GCD
 
 Find the greatest divisor of the number a and b
 
-#### Fibonacci
+### Fibonacci
 
 Find n-th fibonacci number
 
@@ -40,7 +38,7 @@ Find n-th fibonacci number
 - Homogenous Recurrent RElation
 - Eigen Vector
 
-### Course Material
+## Course Material
 
 - MyCourseVille: Homework & Quiz
 - Discord: Discussion
@@ -50,7 +48,7 @@ Find n-th fibonacci number
 
 For official matter or direct message, Contact Prof. using email.
 
-### Scoring
+## Scoring
 
 - 15% Activity
 - 5% Small Quiz
