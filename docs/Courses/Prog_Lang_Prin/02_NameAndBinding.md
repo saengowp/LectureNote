@@ -31,15 +31,17 @@ When subroutine is called, **Stack frame** (or activation record) is formed cons
 
 **Frame pointer** store the frame's reference address so that variable within the frame can be referenced with an offset.
 
+usually store previous position of SP (right after caller's return address)
+
 #### Stack Maintainance
 
-1. Caller push argument
-2. Caller call subroutine. (push return address)
-3. Callee save register and fp
-4. Callee execute tasks
-5. Callee restore register, fp. deallocate stack (shrink sp)
-6. Callee jump to return address
-7. Caller deallocate argument it pushed and shrink sp
+1. Caller push argument (Pre-call)
+2. Caller call subroutine. (push return address) (JSR callee/ Jump Subroutine)
+3. Callee save register and fp, allocate locals (Prologue)
+4. Callee execute tasks (Main body)
+5. Callee restore register, fp. deallocate stack (shrink sp) (Epilogue)
+6. Callee jump to return address (Also Epilogue)
+7. Caller deallocate argument it pushed and shrink sp (Post-call)
 
 > **Can SP moves without calling subroutine?**
 > Yes. rSP can be moved for several reasons such as when using `alloca()` or variable-length array
