@@ -86,4 +86,68 @@ Slave can pull the SCL low to prevent master from sending additional bits (becau
 
 When multiple master attempt to send the message simultaneously (rarely happens because all master monitor the line for activity), master than see the SDA differ from what it want lose the arbitation. Note that from slave's perspective, the signal remains valid.
 
+## CAN
 
+[todo]
+
+## Universal Serial Bus (USB)
+
+### Characteristic
+
+- Async
+- Half-Duplex (Full-Duplex for 3 and C)
+- Master/Slave
+
+### Interface
+
+- USB 1.X and 2.0
+	- Vcc
+	- D-
+	- D+
+	- GND
+- USB 3.0
+	- Previous
+	- SSTX +/-
+	- SSRX +/-
+
+### Architecture
+
+Tiered star Topology
+
+- Host Controller
+- Hub
+- Peripheral
+
+Single root expands like a tree. each node has a single upstream and multiple dwnstream.
+
+#### Host
+- Host enumerate peripherals
+- Host learn VID (Vendor ID), and PID (Peripheral ID)
+- Host assign addresses for all nodes
+
+#### Peripheral
+
+- Single/Compound device
+
+#### Power management
+
+- Host/Hub can electrically disconnect bad devices.
+
+#### Communication
+
+- USB return descriptor describing its capability
+- Endpoint 0 is reserved for control transfer
+
+#### Transfer Type
+
+- Control Transfers: Config, Command
+- Bulk Transfers: Bulk amount of data for non time-sensitive transfer
+- Isochronous transfer: Streaming data eg. Webcam, Ethernet. allocated bandwidth
+- Interrupt transfers: Poll devices
+
+### Extension
+
+#### USB-OTG
+
+- Dual role devices
+- Aggressive power management
